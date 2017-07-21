@@ -140,15 +140,15 @@ header{
     border-color: rgba(143, 218, 0, 0.84);
 }
 
-a.btnBox.btnGreen {}
-
-a.btnBox.btnGreen {}
-
 .btnBlack {
     border: 2px solid #555654;
     margin: auto;
     color: #595758;
     transition: 0.2s;
+}
+
+.btnFooter {
+    width: 207px;
 }
 
 .btnBlack:hover {
@@ -406,3 +406,72 @@ a.btnBox.btnGreen {}
 }
 
 /* footer */
+.sectionFooter{
+	width:1136px;
+	margin: auto;
+	padding:54px 0 47px;
+}
+.sectionFooter .footer01{
+	overflow: hidden;
+	margin-bottom: 53px;
+}
+
+.footer01 .logo .fl{
+	display: block;
+	margin-top: 15px;
+}
+
+.footer01 .fr a{
+	float: left;
+	margin-left: 12px;
+	display: block;
+}
+
+.footer01 .fr a.btnFooter {
+    margin-right: 11px;
+}
+
+.footer01 .fr a .fb{
+	background:url('../images/common/icon_footer.png') no-repeat;
+	width: 30px;
+	height: 30px;
+	margin-top: 12px;
+	display: block;
+	transition: 0.2s;
+}
+
+.footer01 .fr a .itg {
+    background: url(../images/common/icon_footer.png) no-repeat;
+    width: 30px;
+    height: 30px;
+    background-position: -42px 0px;
+    margin-top: 12px;
+    display: block;
+    transition: 0.2s;
+}
+
+.footer01 .fr a:hover .fb,
+.footer01 .fr a:hover .itg{
+	opacity: 0.6;
+}
+
+.footer02 .copy{
+	font-size:12px;
+	color:#595758;
+}
+
+.footer02List li{
+	float: left;
+	margin-left:34px;
+}
+
+.footer02List li a{
+	color:#595758;
+	font-size:10px;
+	letter-spacing: 0.108em;
+	transition: 0.2s;
+}
+
+.footer02List li a:hover{
+	color:#aaa;
+}
