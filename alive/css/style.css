@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+/*Reset*/
+body, h1, h2, h3, ul, li, a, p, img, div{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	line-height: 1;
+}
+
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+
+ul,li{
+	list-style: none;
+}
+
+img{
+	vertical-align: top;
+}
+
+a{
+	text-decoration: none;
+}
+
+/*Common*/
+.fl{
+	float:left;
+}
+
+.fr{
+	float:right;
+}
+
+/*Layout*/
+header{
+	background:url('../images/common/banner.jpg') no-repeat;
+	width:100%;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 100vh;
+}
+
+.headerFull{
+	width:1126px;
+	margin:auto;
+	position: relative;
+}
+
+.headerTop{
+	overflow: hidden;
+	padding-top:33px;
+}
+
+.headerTop a{
+	color:#fff;
+}
+
+.headerTop .fr{
+	 margin-top: 4px;
+}
+
+.headerTop nav .menuList li{
+	float:left;
+	margin-right:33px;
+}
+
+.headerTop nav .menuList li a{
+	transition: 0.2s;
+	font-size: 12px;
+}
+
+.headerTop nav .menuList li:hover a{
+	color:#8FDA00 !important;
+}
+
+.headerTop nav .langList{
+	margin-top: 3px;
+}
+
+.headerTop nav .langList li, .headerTop nav .langList i{
+	float:left;
+	color:#fff;
+	margin-top: 3px;
+}
+
+.headerTop nav .langList i, .headerTop nav .langList a{
+	font-size: 10px;
+	vertical-align: top;
+	transition: 0.2s;
+}
+
+.headerTop nav .langList i{
+	margin:3px 4px 0;
+}
+
+.headerTop nav .langList li.active a{
+	color:#b2b2b2 !important;
+}
+
+.headerTop nav .langList li a:hover{
+	color:#b2b2b2 !important;
+}
+
+.headerBottom{
+	position: absolute;
+	top: 277px;
+	left:60px;
+}
+
+.boldWord {
+    color: #fff;
+    line-height: 1.5;
+    font-size: 40px;
+    letter-spacing: 10px;
+    margin-bottom: 38px;
+}
+
+.btnBox{
+	width:300px;
+	height:65px;
+	border: 2px solid #fff;
+	text-align: center;
+	line-height: 62px;
+	display: block;
+	font-size: 18px;
+	margin: auto;
+}
+
+.btnGreen {
+    background: #8fda00;
+    border-color: #8fda00;
+    color: #fff;
+    transition: 0.2s;
+}
+
+.btnGreen:hover {
+    background: rgba(143, 218, 0, 0.84);
+    border-color: rgba(143, 218, 0, 0.84);
+}
+
+a.btnBox.btnGreen {}
+
+a.btnBox.btnGreen {}
+
+.btnBlack {
+    border: 2px solid #555654;
+    margin: auto;
+    color: #595758;
+    transition: 0.2s;
+}
+
+.btnBlack:hover {
+    background: #595758;
+    color: #fff;
+}
+
+.btnBox.btnWhite{
+	font-size: 18px;
+	color: #fff;
+	letter-spacing: 1px;
+	transition: 0.4s;
+}
+
+.btnBox.btnWhite:hover{
+	background:rgba(255, 255, 255, 0.5);
+}
+
+.section01Full{
+	width:1142px;
+	margin: auto;
+}
+
+.section h3{
+	font-size:30px;
+	font-weight: bold;
+	color:#555654;
+	letter-spacing: 0.2em;
+	text-align: center;
+	margin-bottom: 16px;
+}
+
+.section .sectionText01{
+	font-size: 14px;
+	text-align: center;
+	color:#bcbec0;
+	letter-spacing: 0.1em;
+}
+
+.section01 .sectionList{
+	width: 704px;
+	margin: 68px auto;
+	overflow: hidden;
+}
+
+.sectionList li{
+	float:left;
+}
+
+.sectionList li:first-child a{
+	border:1px solid #555654;
+}
+
+.sectionList li a{
+	min-width: 157px;
+	text-align: center;
+	font-size:14px;
+	font-weight: bold;
+	padding:10px 0;
+	display: block;
+	border: 1px solid #555654;
+	border-left:0;
+	color:#555654;
+	transition: 0.3s;
+}
+
+.sectionList li.active a,
+.sectionList li a:hover{
+	background:#555654;
+	color:#fff;
+}
+
+.sectionList li:nth-child(2) a{
+	width: 198px;
+}
+
+.sectionList li:nth-child(3) a{
+	width: 157px;
+}
+
+.sectionList li:nth-child(4) a{
+	width: 192px;
+}
+
+.section .slideArea{
+	width: 1142px;
+	margin-bottom: 68px;
+	position: relative;
+}
+
+.section .slideArea::before{
+	content:"";
+	position: absolute;
+	background:url('../images/top/lw_prev.png');
+	top:135px;
+	left:0;
+	width: 34px;
+	height:63px;
+	cursor: pointer;
+}
+
+.section .slideArea::after{
+	content: "";
+	position: absolute;
+	background:url('../images/top/lw_next.png');
+	top:135px;
+	right:0;
+	width: 34px;
+	height:63px;
+	cursor: pointer;
+}
+
+.section .slideArea .slideList{
+	display: flex;
+	justify-content: space-between;
+	width:933px;
+	margin: auto;
+}
+
+.section .slideArea .slideList li{
+	position: relative;
+	
+}
+
+.section01{
+	background:#f9f9f9;
+	padding: 100px 0;
+}
+
+.slideArea .slideList li .slideText{
+	position: absolute;
+	top:0;
+	width: 100%;
+	height: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	text-align: center;
+	background:rgba(247, 144, 25, 0.84);
+	color:#fff;
+	opacity: 0;
+	transition: 0.2s;
+	cursor: pointer;
+}
+
+.slideArea .slideList li:hover .slideText{
+	opacity: 1;
+}
+
+.slideArea .slideList li .slideText .text01{
+	font-size:12px;
+	margin:96px 0 26px;
+	letter-spacing: 0.12em;
+}
+
+.slideArea .slideList li .slideText .text02{
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 0.12em;
+	line-height: 27px;
+}
+
+.section02{
+	padding:112px 0 85px;
+}
+
+.section02 .slNews{
+	display: flex;
+	justify-content: space-between;
+	margin: 67px 0 78px;
+}
+
+.section02 .slNews .boxNew{
+	width: 31.7%;
+}
+
+.section02 .slNews .boxNew img{
+	width:100%;
+}
+
+.section02 .slNews .boxNew img.fl{
+	width: 45.4%;
+}
+
+.section02 .slNews .boxNew img.fr{
+	width: 46%;
+}
+
+.boxNew01{
+	overflow: hidden;
+	margin-bottom: 8%;
+}
+
+/* section03 */
+.section03{
+	background:#f9f9f9;
+	padding:108px 0;
+}
+
+.section03 .slBlog{
+	width:1142px;
+	display: flex;
+	justify-content: space-between;
+	margin: 66px auto 94px;
+}
+
+.section03 .slBlog article{
+	width:261px;
+}
+
+.section03 .slBlog article .description{
+	margin-top:24px;
+}
+
+.section03 .slBlog article .description .title01{
+	color:#8fda00;
+	font-size:14px;
+	text-decoration: underline;
+}
+
+.section03 .slBlog article .description .title02{
+	color:#555654;
+	font-size:16px;
+	letter-spacing: 0.1em;
+	margin:16px 0 9px;
+}
+
+.section03 .slBlog article .description .text{
+	font-size: 12px;
+	line-height: 21px;
+	margin-bottom: 13px;
+	color:#555654;
+	letter-spacing: 0.075em;
+}
+
+.section03 .slBlog article .description .readMore{
+	font-size: 10px;
+	color:#555654;
+	letter-spacing: 0.1em;
+}
+
+/* section04 */
+.section04{
+	background:url('../images/top/banner02.jpg') center center no-repeat;
+	width:100%;
+	background-attachment: fixed;
+	box-sizing: border-box;
+	background-size:cover;
+	text-align: center;
+	padding: 188px 0 150px;
+}
+
+.section04 h2{
+	color:#8fda00;
+}
+
+/* footer */
