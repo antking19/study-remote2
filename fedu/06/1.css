@@ -1,0 +1,38 @@
+*{margin: 0; padding: 0;}
+
+.descriptionArea{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.imgArea{
+	width:25%;
+	box-sizing: border-box;
+	padding:5px;
+}
+
+figure img{
+	width:100%;
+}
+
+figcaption{
+	background: lightblue;
+	color: #fff;
+	padding:10px;
+}
+
+.active{
+	background:brown;
+}
+
+@media(max-width:576px){
+	.imgArea{
+		width:100%;
+	}
+}
+
+@media(min-width:577px) and (max-width:768px){
+	.imgArea{
+		width:50%;
+	}
+}

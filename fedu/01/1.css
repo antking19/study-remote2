@@ -1,0 +1,75 @@
+*{margin: 0; padding: 0;}
+
+.bobo{
+	width:1000px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.nap {
+    position: absolute;
+    z-index: 2;
+    top: 20px;
+    left: 20px;
+    border-radius: 50%;
+    height: 180px;
+    width: 180px;
+    background: url('images/5.jpg') -20px -19px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.62);
+    transition: 0.6s;
+    transform-origin: 50% 100%;
+}
+
+.chu {
+    position: absolute;
+    z-index: 1;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: rgba(255, 192, 203, 0.93);
+    left: 20px;
+    top: 20px;
+    text-align: center;
+    line-height: 180px;
+    font-size: 22px;
+}
+
+.bo {
+    width: 220px;
+    height: 220px;
+    background: url('images/5.jpg');
+    border-radius: 50%;
+    position: relative;
+    perspective: 400px;
+    margin-bottom: 200px;
+}
+
+.bo:hover .nap{
+	transform: rotateX(-180deg);
+}
+
+.bo2{
+	background: url('images/1.jpg');
+}
+
+.bo2 .nap{
+	background: url('images/1.jpg') -20px -19px;
+}
+
+.bo3{
+	background: url('images/3.jpg');
+}
+
+.bo3 .nap{
+	background: url('images/3.jpg') -20px -19px;
+}
+
+.bo4{
+	background: url('images/4.jpg');
+}
+
+.bo4 .nap{
+	background: url('images/4.jpg') -20px -19px;
+}

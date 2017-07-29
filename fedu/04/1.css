@@ -1,0 +1,142 @@
+*{margin: 0; padding: 0;}
+.box{
+	width:440px;
+	height:560px;
+	position: relative;
+	overflow: hidden;
+	float: left;
+	margin-right: 2px;
+}
+
+.imgArea img{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.btnArea .prev{
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	color:#fff;
+	padding-left: 10px;
+	line-height: 560px;
+	height: 100%;
+	width: 10%;
+	transition: 0.4s;
+	opacity: 0;
+	visibility: hidden;
+	cursor: pointer;
+}
+
+
+.btnArea .next{
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	right: 0;
+	color:#fff;
+	padding-left: 20px;
+	line-height: 560px;
+	height: 100%;
+	width: 10%;
+	transition: 0.4s;
+	opacity: 0;
+	visibility: hidden;
+	cursor: pointer;
+}
+
+.box:hover .next,
+.box:hover .prev{
+	opacity: 1;
+	visibility: visible;
+}
+
+.box .next:hover,
+.box .prev:hover{
+	background: rgba(0, 0, 0, 0.33);
+}
+
+/*clickArea*/
+.clickArea{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 3;
+	width: 100%;
+}
+
+.clickArea .eyes, 
+.clickArea .heart{
+	float: left;
+	color:#acacac;
+	width: 50%;
+	height: 50px;
+	text-align: center;
+	background: rgba(0, 0, 0, 0.7);
+	line-height: 50px;
+	cursor: pointer;
+	transition: 0.4s;
+}
+
+.clickArea .eyes{
+	transform: translateX(-1000px);
+}
+
+.clickArea .heart{
+	transform: translateX(1000px);
+}
+
+.box:hover .clickArea .eyes,
+.box:hover .clickArea .heart{
+	transform: translateX(0px);
+}
+
+.clickArea .eyes:hover, 
+.clickArea .heart:hover{
+	color:#fff;
+}
+
+/* quickViewFull */
+.quickViewFull{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 4;
+	background: rgba(0, 0, 0, 0.35);
+	width:100%;
+	height:100%;
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.4s;
+}
+
+.quickViewBox{
+	width:1197px;
+	height:600px;
+	overflow-y: scroll;
+	margin:8% auto;
+	position: relative;
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.4s;
+}
+
+.quickViewBox i{
+	position: absolute;
+	top: 5px;
+	right: 10px;
+	font-size: 30px;
+	transition: 0.4s;
+	cursor: pointer;
+}
+
+.quickViewBox i:hover {
+    transform: rotate(360deg);
+}
+
+.showQuickBox{
+	opacity: 1;
+	visibility: visible;
+}

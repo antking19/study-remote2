@@ -1,0 +1,67 @@
+*{margin: 0; padding: 0;}
+
+.khoilon{
+    width:1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+}
+
+.xanh {
+    width: 180px;
+    height: 180px;
+    background: url(images/9.jpg);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    transition: 0.4s;
+    backface-visibility: hidden;
+}
+
+.den {
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: black;
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 35px;
+    transition: 0.4s;
+    /*backface-visibility: hidden;*/
+    transform: rotateY(180deg);
+}
+
+.trang {
+    width: 180px;
+    height: 180px;
+    background: white;
+    position: absolute;
+    top: 20px;
+    box-shadow: inset 0px 0px 2px 2px rgba(0, 0, 0, 0.44);
+    left: 20px;
+    transition: 0.4s;
+}
+
+.motkhoi {
+    position: relative;
+    width: 220px;
+    height: 220px;
+    background: url(images/9.jpg);
+    border-radius: 2%;
+    box-shadow: inset 0 0 0 20px rgba(255, 255, 255, 0.55);
+    perspective: 600px;
+    margin-bottom: 20px;
+
+}
+
+.motkhoi:hover .xanh{
+    transform: rotateY(-180deg);
+}
+
+.motkhoi:hover .den{
+    transform: rotateY(0deg);
+}
